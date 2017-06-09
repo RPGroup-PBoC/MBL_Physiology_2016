@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>MATLAB Bootcamp - Programming</title>
+      <meta name="viewport" content="width=device-width">
+
+      <!-- syntax highlighting CSS -->
+      <link rel="stylesheet" href="/css/syntax.css">
+
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="/css/main.css">
+
+      <!-- Responsive CSS -->
+      <link rel="stylesheet" href="/css/responsive.css">
+
+      <!-- Google Fonts -->
+      <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Raleway:300,400,700' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div class="site">
+      <div class="sidebar" id="sidebar" style="overlow-y:hidden">
+        <div class="header">
+          <h1 class="title"><img id="logo" src="/images/fc_bug.png" style="max-height: 250px;"><br/>
+          <span style="font-size: 0.5em;">MBL Physiology - MATLAB Bootcamp</span>
+        </div>
+        <div class="posts">
+          <ul class="posts-list">
+            
+              <li class="post-link">
+                <a class="post-title" href="/about">
+                  About
+                </a>
+              </li>
+            
+              <li class="post-link">
+                <a class="post-title" href="/people">
+                  People
+                </a>
+              </li>
+            
+              <li class="post-link">
+                <a class="post-title" href="/programming">
+                  Programming
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+        <div class="footer">
+          <span id="footer-links">
+            <a href="http://www.rpgroup.caltech.edu" class="footer-link">Phillips Lab</a> <span class="separator">&bull;</span>
+            <a href="http://www.github.com/rpgroup-pboc/mbl_physiology" class="footer-link">GitHub Repo</a>
+            <br /><br />
+
+            <a href="http://usc.edu"><img src="/images/usc.png" style="max-height:80px; max-width: 50%;
+              align: center;"></a><br/><br/>
+
+            <a href="http://www.caltech.edu"><img src="/images/Caltech_LOGO-BLACK-RGB.png" style="max-height: 40px; max-width: 50%; align: center;"></a><br/><br/>
+
+            <a href="http://berkeley.edu"><img src="/images/berkeley.png" style="max-height: 40px; max-width: 50%; align: center;"></a>
+
+
+            <br/><br/>
+            <a href="http://mbl.edu"><img src="/images/mbl.jpg" style="max-height: 40px; max-width: 50%; align:center;"></a>
+          </span>
+        </div>
+      </div>
+
+        <div class="content" id="home">
+  <div id="sidebar-button">
+    <img src="/images/sidebar-button.png">
+  </div>
+  <div id="post-info">
+    <div id="cover-photo-container">
+    </div>
+      <img id="cover-photo" width="1100px" height="200px;" src="/images/code.jpg" style=" object-fit: cover; padding-bottom: 8em; padding-top: 10px; padding-left: 0em; margin-left: -1em; margin-right:-1em;">
+      <h1 id="title" style="font-weight:500; font-family: Raleway; position: relative; margin-top: -175px; padding-bottom: 10px; margin-left: 0em; color: #FFFFFF;  text-shadow: 0 0 15px #000000; font-size: 3em; border-bottom: 1px solid #FFFFFF; width: 30%;">Programming </h1>
+
+    <div id="info-container">
+    </div>
+  </div>
+
+  <div class="post">
+    <h2 id="data-sets">Data Sets</h2>
+
+<ul>
+  <li>
+    <p><a href="http://www.rpgroup.caltech.edu/course_data/ecoli_growth.zip">Measuring Bacterial Growth</a> | A series of fluorescence and phase contrast images of  <em>E. coli</em> cells growing on a rich medium substrate.</p>
+  </li>
+  <li>
+    <p><a href="http://bi1.caltech.edu/homework">Testing The French Flag Model</a> | Brightfield images of developing <em>Drosophila</em> embryos with different dosages of the Bicoid morphogen. Also download a <a href="http://www.rpgroup.caltech.edu/courses/bi1_2017/data/gregor_data.csv"><code class="highlighter-rouge">csv</code> file</a> containing more dosages from Thomas Gregor.</p>
+  </li>
+  <li>
+    <p><a href="http://www.rpgroup.caltech.edu/courses/bi1_2017/data/lacI_titration.zip">LacI Titration</a> | Brightfield and fluorescence images of <em>E. coli</em> cells containing different numbers of transcriptional repressor molecules. Also download the <a href="http://www.rpgroup.caltech.edu/courses/bi1_2017/data/lacZ_titration_data.csv"><code class="highlighter-rouge">.csv</code> file</a> of fold-change data from Garcia and Phillips 2011.</p>
+  </li>
+  <li>
+    <p><a href="http://www.rpgroup.caltech.edu/course_data/ActinFilaments.zip">Measuring Cytoskeletal Filament Length Distributions</a> | Fluorescence images of actin filaments prepared <em>in vitro</em> during Physiology 2016.</p>
+  </li>
+  <li>
+    <p><a href="http://www.rpgroup.caltech.edu/courses/pboc_data_sets/fly_elongation_version_02.zip">Timing Transcription in <em>Drosophila</em></a> | This data set from Hernan Garcia’s lab contains images from two developing <em>Drosophila</em> embryos in wich either the 5’ or 3’ end of the hunchback morphogen mRNA is labeled with MS2.</p>
+  </li>
+</ul>
+
+<h2 id="exercises">Exercises</h2>
+<p>The code we write in class will be added here as the course progresses.</p>
+
+<h2 id="extra-tutorials">Extra Tutorials</h2>
+<p>We have written several more in-depth tutorials on programming in the MATLAB programming language and have posted them below. More will be posted as the course progresses.</p>
+
+<ul>
+  <li>
+    <p><a href="">Intro to Matlab and Sizing Up <em>E. coli</em></a> | This tutorial will teach some basics of the MATLAB programming language as well as developing a feeling for the size of <em>E. coli</em> cells. <a href="http://www.rpgroup.caltech.edu/courses/pboc_data_sets/sizing_up_ecoli_8bit.zip">[data set ]</a></p>
+  </li>
+  <li>
+    <p><a href="https://rpgroup-pboc.github.io/mbl_pboc_2016/src/euler_method_ODEs.html">Numerical Integration Of Bacterial Growth</a> | This tutorial covers how to solve differential equations numerically.</p>
+  </li>
+</ul>
+
+<h2 id="external-resources">External Resources</h2>
+<p>Below is a list of useful online resources for learning the some principles of programming and scientific data analysis using the Python language.</p>
+
+<ul>
+  <li>
+    <p><a href="http://justinbois.github.io/bootcamp/2016/">BE/Bi/NB 203 : Programming in the Biological Sciences</a></p>
+  </li>
+  <li>
+    <p><a href="http://www.bebi103.caltech.edu">Be/Bi 103 : Data Analysis in the Biological Sciences</a></p>
+  </li>
+</ul>
+
+  </div>
+  <div class="colophon">
+    <p>
+    </p>
+  </div>
+</div>
+
+
+
+    </div>
+    <script src="/scripts/responsive.js" type="text/javascript"></script>
+  </body>
+</html>
