@@ -1,4 +1,4 @@
-function fc = fold_change(IPTG, ea, ei, R, epsilon_R, epsilon)
+function fc = fold_change(IPTG, ea, ei, R, epsilon_r, epsilon)
 %     Returns the fold-change in gene expression for a simple-repression
 %     architecture.
 %     Parameters
@@ -11,5 +11,5 @@ function fc = fold_change(IPTG, ea, ei, R, epsilon_R, epsilon)
 %     epsilon_r : binding energy of the repressor to the DNA
     
     fc = 1 ./ (1 + pact(IPTG, ea, ei, epsilon) .* ...
-                       R ./ 4.6E6 * exp(-epsilon_R));
+              (2 .* R) ./ 4.6E6 .* exp(-epsilon_r));
 end

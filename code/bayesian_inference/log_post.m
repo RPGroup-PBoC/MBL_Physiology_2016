@@ -1,10 +1,10 @@
-function lp = log_post(param, indep_var, dep_var)
+function lp = log_post(param, indep_var, dep_var, epsilon)
 %     Computes the log posterior for a single set of parameters.
 %     Parameters
 %     ----------
 %     param : array
-%         param[0] = epsilon_A = -log(KA)
-%         param[1] = epsilon_I = -log(KI)
+%         param(0) = epsilon_A = -log(KA)
+%         param(1) = epsilon_I = -log(KI)
 %     indep_var : n x 3 array
 %         series of independent variables to compute the theoretical fold-change
 %         1st column: IPTG concentration
@@ -20,14 +20,17 @@ function lp = log_post(param, indep_var, dep_var)
 %         log posterior probability
 
     % unpack parameters
-    ea, ei = param
+    ea = param(1);
+    ei = param(2);
     
-    % unpack the independe variables
-    IPTG, R, epsilon_r = indep_var[:, 0], indep_var[:, 1], indep_var[:, 2]
-    
+    % unpack the independe variables and convert to arrays
+    IPTG = indep_var(:, 1);
+    R = indep_var(:, 2);
+    epsilon_r = indep_var(:, 3);
+        
     % compute theoretical fold-change
-    fc_theory = fold_change(IPTG, ea, ei, R, epsilon_r)
+    fc_theory = fold_change(IPTG, ea, ei, R, epsilon_r, epsilon);
     
     % compute the log posterior probability
-    log_post = len(dep_var) / 2 * np.log(np.sum((dep_var - fc_theory)**2))
+    lp = -length(dep_var) ./ 2 .* log(sum((dep_var - fc_theory).^2));
 end
