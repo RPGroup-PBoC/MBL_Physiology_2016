@@ -1,0 +1,17 @@
+% Testing the image analysis. 
+
+% Load the data. 
+deltaPhaseFiles = dir('data/lacI_titration/O2_delta_phase*.tif');
+deltaYFPFiles = dir('data/lacI_titration/O2_delta_auto*.tif');
+
+% Look at the first phase image. 
+phaseIm = imread(['data/lacI_titration/' deltaPhaseFiles(1).name]);
+
+imshow(phaseIm, [])
+
+% Before, we used imtool. Now let's just look at the image histogram. 
+minPhase = min(min(phaseIm));
+maxPhase = max(max(phaseIm));
+bins = minPhase:1:maxPhase;
+imhist(phaseIm, 1000);
+set(gca, 'yscale', 'log');
