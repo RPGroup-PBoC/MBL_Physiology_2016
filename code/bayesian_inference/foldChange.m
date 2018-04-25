@@ -12,5 +12,5 @@ function fc = foldChange(R, epsilonR)
 %fold-change : array-like.
 %   theoretical fold-change for a simple repression architecture.
 
-    fc = (1 + R ./ 4.6E6 .* exp(-epsilonR)).^-1;
+    fc = (1 + 2 * R ./ 4.6E6 .* exp(-epsilonR)).^-1;
 end
