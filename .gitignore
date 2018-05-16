@@ -5,6 +5,7 @@
 
 #Ignore trash dotfiles.
 *.DS_store
+*.DS_Store
 
 #Ignore shortcuts (on Windows)
 *.lnk
