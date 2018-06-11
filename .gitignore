@@ -53,5 +53,5 @@
 *.ipynb_checkpoints*
 
 #Ignore local copies of the raw data
-/data/
+_data/data/
 code/bayesian_inference/mcmc_hammer/html/*png
