@@ -1,0 +1,28 @@
+ % For the course, you will all have access to the latest version of the
+ % MATLAB programming software for use in data acquisition and analysis.
+ % While we will spend most of the time blazing through syntax and
+ % explaining some of the math behind the programming we will be doing,
+ % none of this will be totally unique.
+ 
+ % MATLAB is a high-level programming language capable of doing a wide
+ % variety of computational tasks. One of those tasks is performing simple
+ % arithmetic operations. 
+ 
+ % Addition 
+ 2 + 2  
+ 4 + 5
+ 10 + 12 
+ 
+ % All of these should print out the result. However, this will very
+ % rapidly become annoying when we are performing many long computations.
+ % To prevent MATLAB from automatically spitting out an answer, we can
+ % simply add a semicolon to every evaluation we perform. 
+ 2 / 8;
+ 7^4; 
+ 100 * 5; % All will be silent. 
+ 
+ % Of course, we will never want to just perform a calculation without
+ % storing the output. To do so, we want to assign a value to a variable,
+ % which we do with the equals sign. 
+ a = 1
+ 
