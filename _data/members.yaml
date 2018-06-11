@@ -5,6 +5,25 @@
   email: boedicke [at] usc.edu
   image: james.png
 
+- name: Hernan Gracia
+  title: Assistant Professor
+  loc: University of California, Berkeley
+  email: hggarcia [at] berkeley.edu
+  image: hernan.png
+
+- name: Elizabeth Eck
+  title: Graduate Student
+  loc: University of California, Berkeley
+  email: eeck [at] berkeley.edu
+  image: liz.jpg
+
+- name: Meghan Turner
+  title: Graduate Student
+  loc: University of California, Berkeley
+  email: meghan_turner [at] berkeley.edu
+  image: meghan.jpg
+
+
 - name: Manuel Razo-Mejia
   loc: Caltech
   title: Graduate Student
