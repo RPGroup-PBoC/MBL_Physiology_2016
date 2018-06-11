@@ -5,25 +5,6 @@
   email: boedicke [at] usc.edu
   image: james.png
 
-
-- name: Griffin Chure
-  email: gchure [at] caltech.edu`
-  image: gchure.png
-  title: Graduate Student
-  loc: Caltech
-
-- name: Armando Reimer
-  email: areimer [at] berkeley.edu
-  loc: UC Berkeley
-  title: Graduate Student
-  image: armando.jpg
-
-- name: Simon Alamos
-  email: simon.alamos [at] berkeley.edu
-  loc: UC Berkeley
-  title: Graduate Student
-  image: simon.png
-
 - name: Manuel Razo-Mejia
   loc: Caltech
   title: Graduate Student
